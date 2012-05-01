@@ -1,0 +1,26 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sip-app xmlns="http://www.jcp.org/xml/ns/sipservlet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.jcp.org/xml/ns/sipservlet http://www.jcp.org/xml/ns/sipservlet/sip-app_1_1.xsd"
+        xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        version="1.1">
+	<!-- Archetype Created SIP Application -->
+	<app-name>${package}.HelloSipWorldApplication</app-name>
+	
+	<main-servlet>
+		HelloSipWorldServlet
+	</main-servlet>
+
+	<servlet>
+		<servlet-name>HelloSipWorldServlet</servlet-name>
+		<display-name>HelloSipWorldServlet</display-name>
+		<description>Hello SIP World Servlet</description>
+		<servlet-class>
+			${package}.HelloSipWorld
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>	
+</sip-app>
