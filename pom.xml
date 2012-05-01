@@ -4,7 +4,7 @@
 
   <groupId>org.mobicents.servlet.sip.archetypes</groupId>
   <artifactId>maven-archetype-sipapp</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>maven-archetype</packaging>
 
   <name>SIP Servlets Application Archetype</name>
