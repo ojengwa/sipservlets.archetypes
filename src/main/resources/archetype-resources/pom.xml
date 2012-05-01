@@ -59,6 +59,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
 					<warSourceDirectory>${basedir}/src/main/sipapp</warSourceDirectory>
 				</configuration>
 			</plugin>

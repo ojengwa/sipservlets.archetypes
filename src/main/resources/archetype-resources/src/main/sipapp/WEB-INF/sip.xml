@@ -3,16 +3,15 @@
 #set( $symbol_escape = '\' )
 <?xml version="1.0" encoding="UTF-8"?>
 
-<sip-app xmlns="http://www.jcp.org/xml/ns/sipservlet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.jcp.org/xml/ns/sipservlet http://www.jcp.org/xml/ns/sipservlet/sip-app_1_1.xsd"
-        xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-        version="1.1">
+<sip-app>
 	<!-- Archetype Created SIP Application -->
 	<app-name>${package}.HelloSipWorldApplication</app-name>
 	
-	<main-servlet>
-		HelloSipWorldServlet
-	</main-servlet>
+	<servlet-selection>
+		<main-servlet>
+			HelloSipWorldServlet
+		</main-servlet>
+	</servlet-selection>
 
 	<servlet>
 		<servlet-name>HelloSipWorldServlet</servlet-name>
